@@ -81,7 +81,7 @@ plt.title('Training and validation loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-import numpy as np
+
 test_pred = model.predict(scaled_test)
 print("MSE: ", metrics.mean_squared_error(test_label, test_pred))
 print("RMSE: ", np.sqrt(metrics.mean_squared_error(test_label, test_pred)))
